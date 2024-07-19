@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href=".bootstarp/css/bootstarp.css">
+    <link rel="stylesheet" href="./styles/custom.css">
+</head>
+
+
+<body>
+    <!-- 
+        first name
+        last name
+        Email
+        password
+        Phone number
+    -->
+
+    <!-- Nav bar
+         
+        1.Title - INTROVERT
+        2.Link it to user details form
+        3.Have a link that scroll downs to carousl
+        
+        -->
+
+    <nav class="navbar navbar-expand-lg bg-primary body-tertiary" data-bs-theme="dark">
+        <div class="container">
+
+            <!-- Navbar Brand -->
+            <img src="logo-no-background.png" width="30" height="30">
+            <a class="navbar-brand" href="#">INTROVERT</a>
+            <!-- Responsive Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Contents -->
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar nav me-auto mb-2 mb-lg-0">
+                    <!-- Item-1 -->
+                    <li class="nav-item">
+                        <a href="Main form.html#UserForm" class="nav-link">
+                            User Form
+                        </a>
+                    </li>
+                    <!-- Item-2 -->
+                    <li class="nav-item">
+                        <a href="Main form.html#animalCarousel" class="nav-link">
+                            Carousel Slides
+                        </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navbars -->
+
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <!-- Home -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-pane" type="button"
+                role="tab" aria-controls="home-pane" aria-selected="true">
+                Home
+            </button>
+        </li>
+        <!-- Window -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="window-tab" data-bs-toggle="tab" data-bs-target="#window-pane" type="button"
+                role="tab" aria-controls="window-pane" aria-selected="false">
+                Window
+            </button>
+        </li>
+        <!-- Door -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="door-tab" data-bs-toggle="tab" data-bs-target="#door-pane" type="button"
+                role="tab" aria-controls="door-pane" aria-selected="false">
+                Door
+            </button>
+        </li>
+        <!-- Gate -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="gate-tab" data-bs-toggle="tab" data-bs-target="#gate-pane" type="button"
+                role="tab" aria-controls="gate-pane" aria-selected="false" disabled>
+                Gate
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            A home, or domicile, is a space used as a permanent or semi-permanent residence for one or more human
+            occupants, and sometimes various companion animals. It is a fully- or semi-sheltered space and can have both
+            interior and exterior aspects to it.</div>
+        <div class="tab-pane fade" id="window-pane" role="tabpanel" aria-labelledby="window-tab" tabindex="0">A window
+            is an opening in a wall, door, roof, or vehicle that allows the exchange of light and may also allow the
+            passage of sound and sometimes air.</div>
+        <div class="tab-pane fade" id="door-pane" role="tabpanel" aria-labelledby="door-tab" tabindex="0">A door is a
+            hinged or otherwise movable barrier that allows ingress (entry) into and egress (exit) from an enclosure.
+            The created opening in the wall is a doorway or portal. A door's essential and primary purpose is to provide
+            security by controlling access to the doorway (portal).
+        </div>
+        <div class="tab-pane fade" id="gate-pane" role="tabpanel" aria-labelledby="gate-tab" tabindex="0">This is
+            disabled.</div>
+    </div>
+
+    <!-- Scroll spy 
+        1 - Home 
+        1a - Window
+        1b - Gate
+        1c - Door
+        
+        2 - Car 
+        2a - Tyre
+        2b - Engine
+        2c - Ventilator
+        
+        3 - Dustbins
+        
+        4 - Building
+        4a - Staircase
+        4b - Alarms
+        -->
+
+    <div class="container my-5 border">
+        <div class="row">
+            <div class="col-4">
+                <nav id="navbar-example" class="h-100 flex-column align-items-stretch pe-3 border-end">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#1">Home</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#1a">Window</a>
+                            <a class="nav-link ms-3 my-1" href="#1b">Gate</a>
+                            <a class="nav-link ms-3 my-1" href="#1c">Door</a>
+                        </nav>
+                        <a class="nav-link" href="#2">Car</a>
+                        <nav class="nav nav-pills flex column">
+                            <a class="nav-link ms-3 my-1" href="#2a">Tyre</a>
+                            <a class="nav-link ms-3 my-1" href="#2b">Engine</a>
+                            <a class="nav-link ms-3 my-1" href="#2c">Ventilator</a>
+                        </nav>
+                        <a class="nav-link" href="#3">Dustbins</a>
+                        <a class="nav-link" href="#4">Buildings</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#4a">Staircase</a>
+                            <a class="nav-link ms-3 my-1" href="#4b">Alarms</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="col-6">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example" class="m-5" style="height: 400px; overflow-y: scroll;" data-bs-smooth-scroll="true" tabindex="0">
+                   
+                        <h4 id="1">Home</h4>
+                        <p>A home, or domicile, is a space used as a permanent or semi-permanent residence for one or
+                            more human occupants, and sometimes various companion animals. It is a fully- or
+                            semi-sheltered space and can have both interior and exterior aspects to it.[vague] Homes
+                            provide sheltered spaces, for instance rooms, where domestic activity can be performed such
+                            as sleeping, preparing food, eating and hygiene as well as providing spaces for work and
+                            leisure such as remote working, studying and playing.</p>
+                    
+                   
+                        <h5 id="1a">Window</h5>
+                        <p>A window is an opening in a wall, door, roof, or vehicle that allows the exchange of light
+                            and may also allow the passage of sound and sometimes air. Modern windows are usually glazed
+                            or covered in some other transparent or translucent material, a sash set in a frame[1] in
+                            the opening; the sash and frame are also referred to as a window.[2] Many glazed windows may
+                            be opened, to allow ventilation, or closed, to exclude inclement weather. Windows may have a
+                            latch or similar mechanism to lock the window shut or to hold it open by various amounts.
+                        </p>
+                    
+                 
+                        <h5 id="1b">Gate</h5>
+                        <p>A gate or gateway is a point of entry to or from a space enclosed by walls. The word derived
+                            from old Norse "gat"[1] meaning road or path; But other terms include yett and port. The
+                            concept originally referred to the gap or hole in the wall or fence, rather than a barrier
+                            which closed it. Gates may prevent or control the entry or exit of individuals, or they may
+                            be merely decorative. The moving part or parts of a gateway may be considered "doors", as
+                            they are fixed at one side whilst opening and closing like one.[2]</p>
+                   
+                    
+                        <h5 id="1c">Door</h5>
+                        <p>A door is a hinged or otherwise movable barrier that allows ingress (entry) into and egress
+                            (exit) from an enclosure. The created opening in the wall is a doorway or portal. A door's
+                            essential and primary purpose is to provide security by controlling access to the doorway
+                            (portal). Conventionally, it is a panel that fits into the doorway of a building, room, or
+                            vehicle. Doors are generally made of a material suited to the door's task. They are commonly
+                            attached by hinges, but can move by other means, such as slides or counterbalancing.</p>
+                    
+                    
+                        <h4 id="2">Car</h4>
+                        <p>A car, or an automobile, is a motor vehicle with wheels. Most definitions of cars state that
+                            they run primarily on roads, seat one to eight people, have four wheels, and mainly
+                            transport people over cargo.[1][2]
+
+                            The French inventor Nicolas-Joseph Cugnot built the first steam-powered road vehicle in
+                            1769, while the Swiss inventor François Isaac de Rivaz designed and constructed the first
+                            internal combustion-powered automobile in 1808. The modern car—a practical, marketable
+                            automobile for everyday use—was invented in 1886, when the German inventor Carl Benz
+                            patented his Benz Patent-Motorwagen. Commercial cars became widely available during the 20th
+                            century. One of the first cars affordable by the masses was the Ford Model T, begun in 1908,
+                            an American car manufactured by the Ford Motor Company. Cars were rapidly adopted in the US,
+                            where they replaced horse-drawn carriages.</p>
+                    
+                   
+                        <h5 id="2a">Tyre</h5>
+                        <p>A tire (North American English) or tyre (Commonwealth English) is a ring-shaped component
+                            that surrounds a wheel's rim to transfer a vehicle's load from the axle through the wheel to
+                            the ground and to provide traction on the surface over which the wheel travels. Most tires,
+                            such as those for automobiles and bicycles, are pneumatically inflated structures, providing
+                            a flexible cushion that absorbs shock as the tire rolls over rough features on the surface.
+                            Tires provide a footprint, called a contact patch, designed to match the vehicle's weight
+                            and the bearing on the surface that it rolls over by exerting a pressure that will avoid
+                            deforming the surface.</p>
+                   
+                   
+                        <h5 id="2b">Engine</h5>
+                        <p>An engine or motor is a machine designed to convert one or more forms of energy into
+                            mechanical energy.[1][2]
+
+                            Available energy sources include potential energy (e.g. energy of the Earth's gravitational
+                            field as exploited in hydroelectric power generation), heat energy (e.g. geothermal),
+                            chemical energy, electric potential and nuclear energy (from nuclear fission or nuclear
+                            fusion). Many of these processes generate heat as an intermediate energy form, so heat
+                            engines have special importance. Some natural processes, such as atmospheric convection
+                            cells convert environmental heat into motion (e.g. in the form of rising air currents).</p>
+                    
+                  
+                        <h5 id="2c">Ventilator</h5>
+                        <p>A ventilator is a type of breathing apparatus, a class of medical technology that provides
+                            mechanical ventilation by moving breathable air into and out of the lungs, to deliver
+                            breaths to a patient who is physically unable to breathe, or breathing insufficiently.
+                            Ventilators may be computerized microprocessor-controlled machines, but patients can also be
+                            ventilated with a simple, hand-operated bag valve mask. Ventilators are chiefly used in
+                            intensive-care medicine, home care, and emergency medicine (as standalone units) and in
+                            anesthesiology (as a component of an anesthesia machine).</p>
+                    
+                    
+                        <h4 id="3">Dustbins</h4>
+                        <p>A waste container, also known as a dustbin,[1] rubbish bin, trash can, and garbage can, among
+                            other names, is a type of container intended to store waste that is usually made out of
+                            metal or plastic. The words "rubbish", "basket" and "bin" are more common in British English
+                            usage; "trash" and "can" are more common in American English usage. "Garbage" may refer to
+                            food waste specifically (when distinguished from "trash") or to municipal solid waste in
+                            general.</p>
+                    
+                    
+                        <h4 id="4">Building</h4>
+                        <p>A building or edifice is an enclosed structure with a roof and walls, usually standing
+                            permanently in one place,[1] such as a house or factory.[1] Buildings come in a variety of
+                            sizes, shapes, and functions, and have been adapted throughout history for numerous factors,
+                            from building materials available, to weather conditions, land prices, ground conditions,
+                            specific uses, prestige, and aesthetic reasons. To better understand the concept, see
+                            Nonbuilding structure for contrast.</p>
+                    
+                    
+                        <h5 id="4a">Staircase</h5>
+                        <p>A stairwell or stair room is a room in a building where a stair is located, and is used to
+                            connect walkways between floors so that one can move in height.[1] Collectively, a set of
+                            stairs and a stairwell is referred to as a staircase or stairway. In buildings with several
+                            housing units, a stairway can be a necessary common area for getting to and from apartments.
+                        </p>
+                  
+                    
+                        <h5 id="4b">Alarms</h5>
+                        <p>A security alarm is a system designed to detect intrusions, such as unauthorized entry, into
+                            a building or other areas, such as a home or school. Security alarms protect against
+                            burglary (theft) or property damage, as well as against intruders. Examples include personal
+                            systems, neighborhood security alerts, car alarms, and prison alarms.</p>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container my-5">
+        <!-- building of breadcrumb 
+                1.Home
+                2.Profile
+                3.User (active)
+            -->
+        <div class="mb-3">
+            <h2 class="breadcrumb-header"> Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item " aria-current="page">Home</li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                </ol>
+            </nav>
+        </div>
+        <div class="mb-3">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Library</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Data</li>
+                </ol>
+            </nav>
+        </div>
+
+        <!-- Rounded pills -->
+        <div class="mb-3">
+            <h2 class="Pills-header">Pills</h2>
+            <span class="badge rounded-pill text-bg-primary">Primary</span>
+            <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+            <span class="badge rounded-pill text-bg-danger">Danger</span>
+            <span class="badge rounded-pill text-bg-success">Success</span>
+            <span class="badge rounded-pill text-bg-warning">Warning</span>
+            <span class="badge rounded-pill text-bg-dark">Dark</span>
+            <span class="badge rounded-pill text-bg-info">Info</span>
+        </div>
+        <br>
+
+        <!-- types of buttons -->
+        <div class="mb-3">
+            <h2 class="Outline-btn-header">Outline buttons</h2>
+            <button type="submit" class="btn btn-outline-primary">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-secondary">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-success">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-danger">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-warning">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-dark">SUMBIT</button>
+            <button type="submit" class="btn btn-outline-info">SUMBIT</button>
+        </div>
+        <br>
+
+        <!-- sizes of buttons -->
+        <div class="mb-3">
+            <!-- large button-->
+            <h2 class="large-btn-header">Large buttons</h2>
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-outline-primary btn-lg">Large button</button>
+        </div>
+        <br>
+        <!-- small buttons-->
+
+        <div class="mb-3">
+            <h2 class="Small-btn-header">Small buttons</h2>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-outline-primary btn-sm">Small button</button>
+        </div>
+        <br>
+
+        <!-- Bar buttons -->
+
+
+        <div class="d-grid gap-2 mb-3">
+            <h2 class="Bar-btn-header">Bar button</h2>
+            <button type="button" class="btn btn-primary">Bar button</button>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" onclick="">button</button>
+        </div>
+        <br>
+
+        <!--Button that actually works-->
+
+        <div class="mb-3">
+            <h2 class="working-btn">Button to google</h2>
+            <a href="https://www.google.com" target="_blank" class="btn btn-primary" role="button">Click to Google</a>
+        </div>
+        <br>
+
+        <!-- bar buttons with outline-->
+        <div class="mb-3 d-grid gap-2">
+            <h2 class="Outline-bar-btn">Outline Bar buttons</h2>
+            <button type="button" class="btn btn-outline-primary">
+                Outline Bar buttons
+            </button>
+        </div>
+        <div class="d-grid gap-2 col-6 mx-auto mb-3">
+            <button class="btn btn-outline-primary">button</button>
+        </div>
+        <br>
+
+        <!-- check box -->
+        <div class="col-12 mb-3">
+            <h2 class="tick box">Check box</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="invalidCheck">
+                <label class="form-check-label" for="invalidCheck">Agree to the terms and conditions</label>
+            </div>
+        </div>
+        <br>
+
+        <!-- button groups -->
+        <div class="mb-3">
+            <h2 class="group-buttons">Button groups</h2>
+            <div class="btn-group" role="group" aria-label="Button group">
+                <button class="btn btn-primary" type="button">Left</button>
+                <button class="btn btn-primary" type="button">Middle</button>
+                <button class="btn btn-primary" type="button">Right</button>
+            </div>
+        </div>
+        <br>
+
+        <!-- check buttons -->
+
+        <h2 class="check box buttons mb-3">Checkbox buttons </h2>
+        <div class="mb-3 btn-group" role="group">
+            <!-- check box 1 -->
+            <input type="checkbox" class="btn-check" id="btn1" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn1">Check button 1</label>
+            <!-- check box 2-->
+            <input type="checkbox" class="btn-check" id="btn2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn2">Check button 2</label>
+            <!-- check box 3 -->
+            <input type="checkbox" class="btn-check" id="btn3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btn3">Check button 3</label>
+        </div>
+        <br>
+
+        <!-- Radio buttons -->
+
+        <h2 class="radio-buttons mb-3">Radio buttons</h2>
+        <div class="btn-group" role="group">
+            <!--Radio button 1 -->
+
+            <input type="radio" class="btn-check" id="radioBtn1" autocomplete="off">
+            <label for="radioBtn1" class="btn btn-outline-primary">Radio 1</label>
+
+            <!--Radio button 2 -->
+
+            <input type="radio" class="btn-check" id="radioBtn2" autocomplete="off">
+            <label for="radioBtn2" class="btn btn-outline-primary">Radio 2</label>
+
+            <!--Radio button 3 -->
+
+            <input type="radio" class="btn-check" id="radioBtn3" autocomplete="off">
+            <label for="radioBtn3" class="btn btn-outline-primary">Radio 3</label>
+        </div>
+        <br>
+
+
+        <!-- badges -->
+        <!-- new alert-->
+        <div class="mb-3">
+
+            <h1>Example Header <span class="badge bg-primary">New</span></h1>
+            <button type="button" class="btn btn-primary position-relative">
+                Profile
+                <span
+                    class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">Notification</span>
+                </span>
+            </button>
+        </div>
+        <br>
+
+        <!-- Alerts -->
+
+        <div class="alert alert-danger">
+            This is a sample alert
+        </div>
+
+        <!-- Tittle card -->
+        <div class="mb-3">
+
+            <h2 class="header-card">Tittle card</h2>
+
+            <div class="card " style="width: 18rem;">
+
+                <img src="nature.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h2 class="card-tittle">Nature</h2>
+                    <h5 class="card-sub-tittle mb-2 text-secondary">Mountains</h5>
+                    <p class="card-text">Nature is an inherent character or constitution,[1] particularly of the
+                        ecosphere or the universe as a whole.</p>
+                    <a href="https://www.istockphoto.com/photo/beautiful-deserted-valley-with-snowy-mountains-in-the-background-gm1439178900-479504228"
+                        class="btn btn-primary w-100" target="_blank">Click to view</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards with background images -->
+        <div class="mb-3">
+            <h2 class="mb-3">Background imaged card</h2>
+            <div class="card text-bg-dark" style="width: 25rem;">
+                <img src="lion.jpg" class="card-img " alt="...">
+                <div class="card-img-overlay">
+                    <h2 class="card-tittle">Lion</h2>
+                    <p class="card-text">Lion is the animal which has a huge amount of power and stregth in the animal
+                        kingdom.</p>
+                    <p class="card-text"><small>Last updated 5 mins ago.</small></p>
+                    <a href="https://en.wikipedia.org/wiki/Lion" class="btn btn-outline-primary" target="_blank">Click
+                        to view</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+
+        <!-- Basic carousel -->
+
+        <!--Note: d-nome is used to hide the carousel caption in modile devices.
+            Note: d-md-block is to display the carousel caption in tablet , computer and laptops      
+          -->
+        <h2 class="mb-3">Carousel slides</h2>
+        <div id="animalCarousel" class="carousel silde mb-3" style="width: 25rem;" data-bs-ride="carousel">
+            <!-- carousel inner -->
+            <div class="carousel-inner">
+
+                <!-- item 1 -->
+                <div class="carousel-item active">
+                    <img src="./assets/cheetah.jpg" class="d-block w-100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Cheetah</h5>
+                        <p>Cheetah is the fastest land <b>animal</b> in the world , with the top speed of <b>120
+                                kmph</b>. </p>
+                    </div>
+                </div>
+                <!-- item 2 -->
+                <div class="carousel-item">
+                    <img src="./assets/lizard.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Reptiles</h5>
+                        <p>Reptiles are good tree climbers and they eat <b>insects</b> mostly.</p>
+                    </div>
+                </div>
+                <!-- item 3 -->
+                <div class="carousel-item">
+                    <img src="./assets/king fisher.jpg" class="d-block w-100" alt="">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Kingfisher</h5>
+                        <p>Kingfishers are the ings of hunting down the fishes.whith their <b>long beeks</b> </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- carousel controls -->
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#animalCarousel" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <!-- Previous icon -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#animalCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <!-- Next icon -->
+            <button class="carousel-control-next" type="button" data-bs-target="#animalCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Close buttons -->
+        <h2 class="mb-3">Close buttons with sample box</h2>
+        <div class="card mb-3" style="width: 25rem; height: 200px;" data-bs-theme="dark">
+            <button type="button" class="btn-close" aria-label="close"></button>
+        </div>
+
+        <!-- Collapse -->
+
+        <h2 class="mb-3">Messi and Ronaldo collapse buttons</h2>
+        <div class="mb-3">
+            <p class="d-inline-flex gap-1 ">
+                <!-- Button using href tag -->
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapse1" role="button"
+                    aria-expanded="false" aria-controls="collapse1">Messi</a>
+                <!-- Button using button tag -->
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#collapse1"
+                    aria-expanded="false" aria-controls="collapse1">Ronaldo</button>
+            </p>
+
+            <div class="collapse" id="collapse1">
+                <div class="card card-body">
+                    Messi and Ronaldo are the best ever players to play Football , but when compared both Messi leads in
+                    several attributes such as dribbling , passing , sills , football IQ , vision and more.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container mb-3">
+            <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#cardExample"
+                aria-expanded="flase" aria-controls="cardExample">
+                Messi and Ronaldo
+            </button>
+        </div>
+        <div id="cardExample">
+            <div class="card mb-3">
+                <div class="card-body">
+                    Messi and Ronaldo are the best ever players to play Football , but when compared both Messi leads in
+                    several attributes such as dribbling , passing , sills , football IQ , vision and more.
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Horizontal collapse -->
+
+        <h2 class="mb-3">Toggle collapse button</h2>
+        <p>
+            <button class="btn btn-primary mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidth"
+                aria-expanded="false" aria-controls="collapseWidth">
+                Motivation
+            </button>
+        </p>
+        <div style="min-height: 120px;" class="mb-3">
+            <div class="collapse collapse-horizontal" id="collapseWidth">
+                <div class="card card-body" style="width: 300px;">
+                    Try your own then you might succeed.
+                </div>
+            </div>
+        </div>
+
+        <!-- Dropdown Toggle Buttons -->
+
+        <h2 class="mb-3">Dropdown Toggle Button</h2>
+        <div class="btn-group mb-3 dropend">
+            <button class="btn btn-primary" type="button">G.O.A.T</button>
+            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="visually-hidden">Toggle button</span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item active bg-danger"
+                        href="https://www.peakpx.com/en/hd-wallpaper-desktop-vqhgz" target="_blank">Messi</a></li>
+                <hr class="dropdown-divider">
+                <li><a class="dropdown-item" href="https://www.peakpx.com/en/hd-wallpaper-desktop-ahgzl"
+                        target="_blank">Ronaldo</a></li>
+                <li><a class="dropdown-item" href="https://www.peakpx.com/en/hd-wallpaper-desktop-otzkt"
+                        target="_blank">Neymar</a></li>
+            </ul>
+        </div>
+
+
+        <!-- List Groups  -->
+        <h2 class="mb-3">List Groups</h2>
+        <div class="list-group mb-3">
+            <li class="list-group-item list-group-item-action active" aria-current="true">Play football
+                <span class="badge text-bg-danger rounded-pill">99</span>
+            </li>
+
+            <button class="list-group-item list-group-item-action">Going college
+                <span class="badge text-bg-danger rounded-pill">80</span>
+            </button>
+
+            <button class="list-group-item list-group-item-action">Coding
+                <span class="badge text-bg-danger rounded-pill">50</span>
+            </button>
+
+            <button class="list-group-item list-group-item-action disabled" aria-disabled="true">Gym
+                <span class="badge text-bg-danger rounded-pill">20</span>
+            </button>
+
+        </div>
+
+
+        <!-- Modals -->
+        <!-- Trigger button -->
+
+        <h2 class="mb-3">Modal</h2>
+        <div class="mb-3">
+            <button class="btn btn-primary rounded-pill" data-bs-toggle="modal" aria-labelledby="titleOfGoat"
+                data-bs-target="#messiModal">
+                GOAT
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="messiModal" tabindex="-1" aria-hidden="true" data-bs-backdrop="static"
+                data-bs-keyboard="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="titleOfGoat">GOAT</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p><b>Messi</b> is the greatest of all time in football</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close</button>
+                            <button type="button" class="btn btn-primary">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Bootstrap modal form
+     1- first name
+     2- last name
+     3- password
+     4- confirm password
+
+     should contain Sumbit and close button in the footer.
+    -->
+
+        <h2 class="mb-3">Form using Modal</h2>
+        <div class="mb-3">
+            <!-- Button to trigger the form -->
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                Click to login
+            </button>
+        </div>
+        <!-- Modal -->
+
+        <div class="modal fade" id="loginModal" aria-labelledby="formTitle" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-title">
+                        <h5 class="modal-header fs-5" id="formTitle">User Login Form
+                            <button class="btn-close" type="button" data-bs-dismiss="modal"
+                                aria-describedby="close"></button>
+                        </h5>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Firstname -->
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="mb-2 col-md-6">
+                                    <label for="firstname" class="form-label">First name</label>
+                                    <input type="text" class="form-control" aria-describedby="FirstName"
+                                        placeholder="Enter your FirstName" required>
+                                    <div class="form-text" id="FirstName">Enter your FirstName over here.</div>
+                                </div>
+                                <!-- Lastname -->
+                                <div class="mb-2 col-md-6">
+                                    <label for="lastname" class="form-label">
+                                        Last name
+                                    </label>
+                                    <input type="text" class="form-control" aria-describedby="LastName"
+                                        placeholder="Enter your LastName" required>
+                                    <div class="form-text" id="LastName">Enter your LastName over here.</div>
+                                </div>
+                            </div>
+                            <!-- Password -->
+
+                            <div class="row">
+                                <div class="mb-2 col-md-6">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" aria-describedby="PassWord"
+                                        placeholder="Enter your password" required>
+                                    <div id="PassWord" class="form-text">Password should contain minimum of 8
+                                        characters.
+                                    </div>
+                                </div>
+
+
+                                <!-- Confirm password -->
+                                <div class="mb-2 col-md-6">
+                                    <label for="confirm-Password" class="form-label">Confirm password</label>
+                                    <input type="password" class="form-control" aria-describedby="ConfirmPassword"
+                                        placeholder="Confirm Password" required>
+                                    <div class="form-text" id="ConfirmPassword">Please re-match with password.</div>
+                                </div>
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="mb-2 col-12">
+                                <label for="Email" class="form-label">Email</label>
+                                <input type="email" class="form-control" aria-describedby="EmaiL"
+                                    placeholder="Enter your Email" required>
+                                <div id="EmaiL" class="from-text">Please enter a valid Email address.</div>
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-bs-dismiss="close"
+                                    aria-label="close">Close</button>
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- DEBUGING part -->
+
+
+
+
+    <!-- DEBUGING part -->
+
+    <!-- building a FAQ form
+         1.what makes bootstrap awesome?
+         ans- the pre compiled CSS  and javascrit components makes it awesome 
+
+         2.why is the earth round ?
+         ans-because the cosmos wants it to be in that way
+
+         3. who is the most powerful character in anime ?
+         ans- goku (sen goku) is the most powerful character in anime world 
+    -->
+    <h2 class="faq-header">
+        FAQ - Frequently ased questions
+    </h2>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                    collapse plugin adds the appropriate classes that we use to style each element. These
+                    classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                    can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth
+                    noting
+                    that just about any HTML can go within the <code>.accordion-body</code>, though the
+                    transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+        <!-- item 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Accordion Item #2
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until
+                    the
+                    collapse plugin adds the appropriate classes that we use to style each element. These
+                    classes
+                    control the overall appearance, as well as the showing and hiding via CSS transitions. You
+                    can
+                    modify any of this with custom CSS or overriding our default variables. It's also worth
+                    noting
+                    that just about any HTML can go within the <code>.accordion-body</code>, though the
+                    transition
+                    does limit overflow.
+                </div>
+            </div>
+        </div>
+        <!-- item 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    3. who is the most powerful character in anime ?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <b>Goku (sen Goku)</b> is the most powerful character in anime world
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-container my-5" id="UserForm">
+        <h2 class="text-container my-5">
+            User Detail Form
+            <div id="information" class="form-text" aria-describedby="information-caption"> we won't share your
+                details
+                with anyone</div>
+
+        </h2>
+
+        <form>
+
+            <!-- first name field -->
+            <div class="form-floating mb-3">
+
+                <input type="text" id="first name" class="form-control" placeholder="Enter your firstname" required
+                    aria-describedby="first nameCaption">
+                <label for="first name">
+                    First name
+                </label>
+                <div id="firstnameCaption" class="form-text">Enter your first name over here</div>
+
+            </div>
+
+            <!-- last name field -->
+
+            <div class=" form-floating mb-3">
+
+                <input type="text" id="last name" class="form-control" placeholder="Enter your lastname" required
+                    aria-describedby="lastnameCaption">
+
+                <label for="last name">
+                    Last name
+                </label>
+
+                <div id="lastnameCaption" class="form-text">Enter your last name over here</div>
+            </div>
+
+            <!-- Email field
+             form text - the email address will bot be shared with anyone
+        -->
+            <div class=" mb-3">
+
+
+                <label for="Email">
+                    Email
+                </label>
+                <div class="input-group has-validation">
+                    <input type="email" id="email" class="form-control is-invalid" placeholder="Enter your Email"
+                        required aria-describedby="emailcaption">
+                    <span class="input-group-text">@gmail.com</span>
+                    <div class="invalid-feedback">Please provide a valid email</div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <!-- Password field
+         form text - the password should be atleast of 8 characters and atleast of two uppercases and one special character
+    -->
+            <div class="form-floating mb-3">
+
+                <input type="password" class="form-control" placeholder="Enter your password" required
+                    aria-labelledby="passwordCaption">
+
+
+                <label for="password">
+                    Password
+                </label>
+            </div>
+            <div id="passwordCaption" class="form-text">
+                your password must be 8-20 characters long and contain atleast 2 uppercasses and 1 special character
+            </div>
+
+
+            <!--select your city
+    
+        1.chennai
+        2.coimbatore
+        3.madurai
+        4.hyderabad
+        5.banglore
+        6.trichy
+        7.buvaneshwar
+        8.kochi
+        9.pune
+        10.mumbai
+    -->
+
+            <div class="mb-3">
+                <label for="city" class="form-label">City</label>
+                <input class="form-control" list="cityList" placeholder="Select city" aria-describedby="citycation">
+                <div id="citycation" class="form-text">Choose your respective city</div>
+                <datalist id="cityList">
+                    <option value="chennai">
+                    <option value="coimbatore">
+                    <option value="madurai">
+                    <option value="hyderabad">
+                    <option value="trichy">
+                    <option value="buvaneshwar">
+                    <option value="banglore">
+                    <option value="kochi">
+                    <option value="pune">
+                    <option value="mumbai">
+                </datalist>
+            </div>
+
+            <button class="btn btn-primary" type="submit">submit</button>
+
+    </div>
+
+
+    </form>
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>

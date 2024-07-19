@@ -1,0 +1,33 @@
+h1{
+    color: blue;
+    font-style: oblique;
+
+}
+
+p{
+    color: blue;
+    font-style: normal;
+}
+
+a{
+    color: darkmagenta;
+    font-size: medium;
+}
+
+button{
+    cursor: pointer;
+    
+}
+
+form{
+    margin: auto;
+    width: 35%;
+
+}
+button{
+    cursor: pointer;
+}
+
+button{
+
+}
